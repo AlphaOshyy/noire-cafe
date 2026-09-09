@@ -8,6 +8,19 @@ body.light{
   --cream-text:#f5efe7;
 }
 
+/* Keep light controls readable in dark theme and dark controls readable in light theme */
+body:not(.light) .button-light,
+body:not(.light) .filter.active,
+body:not(.light) .filter:hover{
+  color:#171411;
+}
+
+body.light .button-light,
+body.light .filter.active,
+body.light .filter:hover{
+  color:#f5efe7;
+}
+
 .button-light,
 .filter.active,
 .filter:hover{
@@ -20,6 +33,16 @@ body.light{
 
 .reservation-box .button-dark{
   color:var(--dark-button-text);
+}
+
+.reservation-box select option{
+  background:#171411;
+  color:#f5efe7;
+}
+
+body.light .reservation-box select option{
+  background:#181512;
+  color:#f5efe7;
 }
 
 .footer-credit{
