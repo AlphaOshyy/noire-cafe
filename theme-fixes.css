@@ -1,47 +1,24 @@
-/* NOIRÉ theme and footer polish */
+/* NOIRÉ dark theme polish */
 
-:root{
-  --cream-text:#171411;
+/* Menu filters: cream background with dark text for clear contrast */
+.filter.active,
+.filter:hover{
+  background:var(--cream);
+  color:#171411;
+  border-color:var(--cream);
 }
 
-body.light{
-  --cream-text:#f5efe7;
-}
-
-/* Keep light controls readable in dark theme and dark controls readable in light theme */
-body:not(.light) .button-light,
-body:not(.light) .filter.active,
-body:not(.light) .filter:hover{
+.button-light{
+  background:var(--cream);
   color:#171411;
 }
 
-body.light .button-light,
-body.light .filter.active,
-body.light .filter:hover{
-  color:#f5efe7;
-}
-
-.button-light,
-.filter.active,
-.filter:hover{
-  color:var(--cream-text);
-}
-
 .reservation-box{
-  color:var(--cream-text);
-}
-
-.reservation-box .button-dark{
   color:var(--dark-button-text);
 }
 
 .reservation-box select option{
   background:#171411;
-  color:#f5efe7;
-}
-
-body.light .reservation-box select option{
-  background:#181512;
   color:#f5efe7;
 }
 
@@ -67,32 +44,6 @@ body.light .reservation-box select option{
 
 .footer-credit a:hover{
   color:var(--accent);
-}
-
-body.light .nav-links{
-  color:var(--text);
-}
-
-body.light .nav-links a:hover,
-body.light .nav-links a.active{
-  color:var(--accent);
-}
-
-body.light .menu-toggle span{
-  background:var(--text);
-}
-
-body.light .theme-toggle{
-  color:var(--text);
-}
-
-body.light .nav-cta{
-  border-color:var(--line);
-}
-
-body.light .hero-copy,
-body.light .hero-meta{
-  color:#eee7de;
 }
 
 @media(max-width:800px){
