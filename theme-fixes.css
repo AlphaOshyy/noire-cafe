@@ -1,0 +1,63 @@
+/* NOIRÉ theme and footer polish */
+
+.footer-credit{
+  border-top:1px solid var(--line);
+  margin-top:26px;
+  padding-top:18px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:9px;
+  color:var(--footer-muted);
+  font-size:9px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+.footer-credit a{
+  color:var(--footer-text);
+  transition:color .25s;
+}
+
+.footer-credit a:hover{
+  color:var(--accent);
+}
+
+/* Keep the light theme intentional and readable. */
+body.light .nav-links{
+  color:var(--text);
+}
+
+body.light .nav-links a:hover,
+body.light .nav-links a.active{
+  color:var(--accent);
+}
+
+body.light .menu-toggle span{
+  background:var(--text);
+}
+
+body.light .theme-toggle{
+  color:var(--text);
+}
+
+body.light .nav-cta{
+  border-color:var(--line);
+}
+
+body.light .hero-copy{
+  color:#eee7de;
+}
+
+body.light .hero-meta{
+  color:#eee7de;
+}
+
+@media(max-width:800px){
+  .footer-credit{
+    flex-wrap:wrap;
+    line-height:1.8;
+    gap:5px 8px;
+  }
+}
