@@ -1,6 +1,6 @@
 /* NOIRÉ dark theme polish */
 
-/* Menu filters: cream background with dark text for clear contrast */
+/* Menu filters */
 .filter.active,
 .filter:hover{
   background:var(--cream);
@@ -13,11 +13,45 @@
   color:#171411;
 }
 
+/* Reservation form */
 .reservation-box{
-  color:var(--dark-button-text);
+  background:var(--cream);
+  color:#171411;
+}
+
+.reservation-box h2,
+.reservation-box label,
+.reservation-box input,
+.reservation-box select{
+  color:#171411;
+}
+
+.reservation-box > div > p:not(.eyebrow){
+  color:#6f675e;
+}
+
+.reservation-box input::placeholder{
+  color:#777067;
+  opacity:1;
+}
+
+.reservation-box input,
+.reservation-box select{
+  border-bottom-color:rgba(23,20,17,.35);
+  color-scheme:light;
+}
+
+.reservation-box input:focus,
+.reservation-box select:focus{
+  border-bottom-color:var(--accent);
 }
 
 .reservation-box select option{
+  background:#f5f0e8;
+  color:#171411;
+}
+
+.reservation-box .button-dark{
   background:#171411;
   color:#f5efe7;
 }
