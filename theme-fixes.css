@@ -1,5 +1,27 @@
 /* NOIRÉ theme and footer polish */
 
+:root{
+  --cream-text:#171411;
+}
+
+body.light{
+  --cream-text:#f5efe7;
+}
+
+.button-light,
+.filter.active,
+.filter:hover{
+  color:var(--cream-text);
+}
+
+.reservation-box{
+  color:var(--cream-text);
+}
+
+.reservation-box .button-dark{
+  color:var(--dark-button-text);
+}
+
 .footer-credit{
   border-top:1px solid var(--line);
   margin-top:26px;
@@ -24,7 +46,6 @@
   color:var(--accent);
 }
 
-/* Keep the light theme intentional and readable. */
 body.light .nav-links{
   color:var(--text);
 }
@@ -46,10 +67,7 @@ body.light .nav-cta{
   border-color:var(--line);
 }
 
-body.light .hero-copy{
-  color:#eee7de;
-}
-
+body.light .hero-copy,
 body.light .hero-meta{
   color:#eee7de;
 }
